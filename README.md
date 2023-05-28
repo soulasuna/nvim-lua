@@ -1,2 +1,3 @@
-# nvim-lua
-Configuration file of `Neovim` by `Lua`
+# The NeoVim Configuration by `Lua`
+
+
