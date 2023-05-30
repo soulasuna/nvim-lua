@@ -14,9 +14,15 @@
 
 vim.g.mapleader = " "
 local opt = { noremap = true, silent = true }
-vim.keymap.set("n", "s", ":w<CR>", opt)
+vim.keymap.set("n", "s", "<NOP>", opt)
+vim.keymap.set("n", "S", ":w<CR>", opt)
 vim.keymap.set("n", "Q", ":q<CR>", opt)
--- vim.keymap.set("n", "<LEADER><CR>", ":nohlsearch<CR>", opt)
+vim.keymap.set("n", "<LEADER><CR>", ":nohlsearch<CR>", opt)
+
+-- 
+-- =================== Cursor Motion ====================
+--
+vim.keymap.set("n", "w", "W", opt)
 
 --
 -- =================== Window Management ====================
